@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flip Text!</title>
+  <script src="flip.js"></script>
+</head>
+<body>
+  <p style="color: gray;font-style: italic;">// 只支持英文大小写</p>
+  <textarea rows="5" cols="100" id="src_text_area" placeholder="键盘给你，你来写！"></textarea>
+  <form>
+    <input type="radio" name="flip_type" value="0" checked="true">侧空翻
+    <input type="radio" name="flip_type" value="1">照镜子
+    <input type="radio" name="flip_type" value="2">看倒影
+
+  </form>
+  <br>
+  <button type="button" onclick="onConvertButtonAction()">我变，我变，我变变变!!!</button>
+  <br>
+  <p id="flip_result"></p>
+</body>
+</html>
